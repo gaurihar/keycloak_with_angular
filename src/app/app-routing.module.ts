@@ -7,9 +7,9 @@ import {KibanaComponent} from './component/kibana/kibana.component'
 
 
 const routes: Routes = [
- // {path:'' ,redirectTo:'menu',pathMatch:'full'},
-  {path:'menu',component:MenuComponent},
-  {path:'google',component:GoogleComponent,canActivate:[AuthGuard],
+ {path:'' ,redirectTo:'menu',pathMatch:'full'},
+  {path:'menu',component:MenuComponent,canActivate:[AuthGuard]},
+  {path:'google',component:GoogleComponent
 },
 {path:'kibana',component:KibanaComponent}
 ];

@@ -1,21 +1,19 @@
 <mat-toolbar color="red">
-    <button mat-button [matMenuTriggerFor]="menu"><mat-icon>menu</mat-icon></button>
-    <mat-menu #menu="matMenu">
-      <button mat-menu-item ><a href=''>Home</a></button>
-    <button mat-menu-item ><a href='menu'>Pages</a></button>
-     
+  <button mat-button [matMenuTriggerFor]="menu"><mat-icon>menu</mat-icon></button>
+  <mat-menu #menu="matMenu">
+  <button mat-menu-item ><a href='menu'>Pages</a></button>
+  </mat-menu>
+  
 
-    </mat-menu>
-    
-  <span>Kibana</span>
 
-  <span class="example-spacer"></span>
+<span class="example-spacer"></span>
+<button mat-icon-button class="example-icon" aria-label="Example icon-button with user icon">
+  <mat-icon>account_circle</mat-icon>
+</button>
+<button mat-icon-button class="example-icon" aria-label="Example icon-button with user icon">
+  <h4><a href="#" (click)="logout()">Logout</a></h4>
 
-  <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
-    <mat-icon>favorite</mat-icon></button> 
-     <button mat-icon-button class="example-icon" aria-label="Example icon-button with user icon">
-    <mat-icon>account_circle</mat-icon>
-  </button>
+</button>
 </mat-toolbar>
 
 
